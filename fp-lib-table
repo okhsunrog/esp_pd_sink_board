@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "pb_board")(type "KiCad")(uri "${KIPRJMOD}/kicad_libs/pb_board.pretty")(options "")(descr ""))
+)
