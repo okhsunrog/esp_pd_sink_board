@@ -9933,7 +9933,7 @@
 		(descr "1x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 9.78x4.72mm (see e.g. https://www.ctscorp.com/wp-content/uploads/206-208.pdf)")
 		(tags "DIP Switch SPST Slide 7.62mm 300mil")
 		(property "Reference" "SW5"
-			(at 3.81 -3.42 360)
+			(at 3.81 -3.42 0)
 			(layer "F.SilkS")
 			(uuid "733d230e-e294-497b-84e7-47ea12bb2c42")
 			(effects
@@ -9944,7 +9944,7 @@
 			)
 		)
 		(property "Value" "VBUS Switch"
-			(at 3.81 3.42 360)
+			(at 3.81 3.42 0)
 			(layer "F.Fab")
 			(uuid "20667424-07be-4c45-a605-d33d365477b0")
 			(effects
@@ -10469,7 +10469,7 @@
 			(uuid "b5c14f70-0115-46fb-8f09-17841e5ad6c7")
 		)
 		(fp_text user "on"
-			(at 5.365 -1.4975 360)
+			(at 5.365 -1.4975 0)
 			(layer "F.Fab")
 			(uuid "17654a26-b08a-48a8-b50d-5dae951b0e8c")
 			(effects
@@ -12649,16 +12649,16 @@
 			)
 		)
 	)
-	(footprint "Inductor_SMD:L_1206_3216Metric"
+	(footprint "RF_Antenna:Johanson_2450AT18x100"
 		(layer "F.Cu")
 		(uuid "b24d5e8b-14ec-4cbe-8a56-7b0549d6f466")
-		(at 140.48 105.06)
-		(descr "Inductor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 80, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
-		(tags "inductor")
+		(at 136 106.5)
+		(descr "Johanson 2450AT43F0100 SMD antenna 2400-2500Mhz, -0.5dBi, https://www.johansontechnology.com/datasheets/2450AT18A100/2450AT18A100.pdf")
+		(tags "antenna")
 		(property "Reference" "AE1"
-			(at 0 -1.9 0)
+			(at 0 -1.85 0)
 			(layer "F.SilkS")
-			(uuid "ea09db20-a87e-492d-abb4-f464abed7522")
+			(uuid "70fecaa1-4695-45c1-ac74-2f5725105a34")
 			(effects
 				(font
 					(size 1 1)
@@ -12667,9 +12667,9 @@
 			)
 		)
 		(property "Value" "Antenna_Chip"
-			(at 0.6175 1.66 0)
+			(at 0 1.85 0)
 			(layer "F.Fab")
-			(uuid "0931a145-80e7-47a7-90fa-c4800c3f2c12")
+			(uuid "424615d7-5957-4ace-820e-6c6b810e9e85")
 			(effects
 				(font
 					(size 1 1)
@@ -12677,12 +12677,12 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_1206_3216Metric"
+		(property "Footprint" "RF_Antenna:Johanson_2450AT18x100"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "766aa091-c365-40fb-80db-e66f874bda8f")
+			(uuid "375d5149-b340-4589-9884-973ef4ad99e7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12695,7 +12695,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6b2b6ae1-b5c2-44bc-b90f-f30efc3aa427")
+			(uuid "75ef9c8b-b576-4661-b216-65a157810153")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12708,7 +12708,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d103967c-5e77-4482-a8bb-6786d8dbe9cf")
+			(uuid "8f96f542-4376-4325-bdd3-67d8be1ac45b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12721,109 +12721,129 @@
 		(sheetfile "esp-pd.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -0.835242 -0.91)
-			(end 0.835242 -0.91)
+			(start -2.31 -1.16)
+			(end -2.31 1.16)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "8ce8408f-fcb7-41f4-9c50-0fcee1473643")
+			(uuid "2669f9bc-3ed5-4773-b9c1-13392e92bb36")
 		)
 		(fp_line
-			(start -0.835242 0.91)
-			(end 0.835242 0.91)
+			(start -2.31 1.16)
+			(end 1.6 1.16)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "7e3aea6f-a025-4838-8923-4f43e78a15c3")
+			(uuid "621840f3-d198-4226-9216-441b1a5b0e8a")
 		)
 		(fp_line
-			(start -2.35 -1.2)
-			(end 2.35 -1.2)
+			(start 1.6 -1.16)
+			(end -2.31 -1.16)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "0c645475-8a14-4cc8-852d-b4e63de6779e")
+		)
+		(fp_line
+			(start -2.3 -1.15)
+			(end 2.3 -1.15)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "98179d05-a69a-4b7c-8178-1f875c4730a5")
+			(uuid "0e193c54-cea2-4ac4-a440-b6a1d82282ee")
 		)
 		(fp_line
-			(start -2.35 1.2)
-			(end -2.35 -1.2)
+			(start -2.3 1.15)
+			(end -2.3 -1.15)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "a9e1a309-0a06-4aaa-978d-cecfba5e454d")
+			(uuid "33ab18a6-b01b-49e6-a106-0657f16f04c1")
 		)
 		(fp_line
-			(start 2.35 -1.2)
-			(end 2.35 1.2)
+			(start 2.3 -1.15)
+			(end 2.3 1.15)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "85b121d0-4d1d-4391-a0fe-5770ec5ab26f")
+			(uuid "f6c8475a-ad69-4d14-b5ff-76d705f3a237")
 		)
 		(fp_line
-			(start 2.35 1.2)
-			(end -2.35 1.2)
+			(start 2.3 1.15)
+			(end -2.3 1.15)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "d08890d0-cfff-4c14-9485-fc8b1a5f3910")
+			(uuid "2cc7f1fd-39a1-4f92-8290-73deb5a69443")
 		)
 		(fp_line
-			(start -1.6 -0.8)
-			(end 1.6 -0.8)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "a9fd321d-894a-4f32-9f59-5473a9e67b7e")
-		)
-		(fp_line
-			(start -1.6 0.8)
-			(end -1.6 -0.8)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "4b0b368d-e506-4776-b09c-3fd7911778d9")
-		)
-		(fp_line
-			(start 1.6 -0.8)
-			(end 1.6 0.8)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "df4e3996-92a0-43d3-9faa-7ca9d91b4599")
-		)
-		(fp_line
-			(start 1.6 0.8)
+			(start -1.6 -0.4)
 			(end -1.6 0.8)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "a1667104-5e86-48de-b052-c3fd76567d13")
+			(uuid "7c28d535-dd67-481e-935b-be74a214431d")
+		)
+		(fp_line
+			(start -1.6 0.8)
+			(end 1.6 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "bd21899b-e886-4fa0-9976-eba37ebb1c53")
+		)
+		(fp_line
+			(start -1.2 -0.8)
+			(end -1.6 -0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "8c7302cf-0ff3-4ee4-885b-14a2c2293855")
+		)
+		(fp_line
+			(start 1.6 -0.8)
+			(end -1.2 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "8d4b5098-16d0-499b-908e-da54f3c758e3")
+		)
+		(fp_line
+			(start 1.6 0.8)
+			(end 1.6 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "9b95bd72-ce73-42b8-a030-797f757a192d")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 0)
 			(layer "F.Fab")
-			(uuid "fd8f49e9-8538-4742-b786-ea79fdb4aa86")
+			(uuid "b8a75bec-f71f-45f7-a7cd-b67d0931f999")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -12832,26 +12852,26 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -1.575 0)
-			(size 1.05 1.9)
+			(at -1.45 0)
+			(size 1.2 1.8)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(roundrect_rratio 0.238095)
+			(roundrect_rratio 0.208333)
 			(net 2 "Net-(AE1-FEED)")
 			(pinfunction "FEED")
 			(pintype "input")
-			(uuid "df975073-26bd-4dc9-8d7b-3e85cd91560e")
+			(uuid "ee05f3c9-c88a-4f69-89cc-e7e201b8e879")
 		)
 		(pad "2" smd roundrect
-			(at 1.575 0)
-			(size 1.05 1.9)
+			(at 1.45 0)
+			(size 1.2 1.8)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(roundrect_rratio 0.238095)
+			(roundrect_rratio 0.208333)
 			(net 1 "unconnected-(AE1-PCB_Trace-Pad2)")
 			(pinfunction "PCB_Trace")
 			(pintype "passive+no_connect")
-			(uuid "ab024470-f4c8-4195-bf94-35a8ee1638fd")
+			(uuid "5f2c1a7a-41a8-4410-9a89-29556c7d8d7d")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_1206_3216Metric.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/RF_Antenna.3dshapes/Johanson_2450AT18x100.wrl"
 			(offset
 				(xyz 0 0 0)
 			)

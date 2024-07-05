@@ -15406,7 +15406,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_1206_3216Metric"
+		(property "Footprint" "RF_Antenna:Johanson_2450AT18x100"
 			(at 124.46 98.425 0)
 			(effects
 				(font
